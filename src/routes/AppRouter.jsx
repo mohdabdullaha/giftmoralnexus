@@ -14,6 +14,8 @@ import Contact from '../pages/Contact/Contact';
 import Infographics from '../pages/Infographics/Infographics';
 import RazEHayat from '../pages/RazEHayat/RazEHayat';
 import VisionMission from '../pages/VisionMission/VisionMission';
+import MotivationalVideos from '../pages/Videos/MotivationalVideos';
+import VideoPlayer from '../pages/Videos/VideoPlayer';
 
 const AppRouter = () => {
     return (
@@ -33,6 +35,8 @@ const AppRouter = () => {
                 <Route path="/infographics" element={<Infographics />} />
                 <Route path="/razehayat" element={<RazEHayat />} />
                 <Route path="/vision-mission" element={<VisionMission />} />
+                <Route path="/videos" element={<MotivationalVideos />} />
+                <Route path="/videos/:id" element={<VideoPlayer />} />
             </Routes>
         </BrowserRouter>
     );
