@@ -232,102 +232,102 @@ export const content = {
             {
                 id: 1,
                 title: "Childhood Struggle and Sacrifice",
-                youtube: "https://youtu.be/QtE6dk7_mug"
+                youtube: "https://www.youtube.com/watch?v=QtE6dk7_mug"
             },
             {
                 id: 2,
                 title: "Father's Day Tribute",
-                youtube: "https://youtu.be/fUR5ks-t9TI"
+                youtube: "https://www.youtube.com/watch?v=fUR5ks-t9TI"
             },
             {
                 id: 3,
                 title: "A Silent Tribute – Mother's Day",
-                youtube: "https://youtu.be/CjQkleDSW6I"
+                youtube: "https://www.youtube.com/watch?v=CjQkleDSW6I"
             },
             {
                 id: 4,
                 title: "Child and Man",
-                youtube: "https://youtu.be/2PFxSaL8ELE"
+                youtube: "https://www.youtube.com/watch?v=2PFxSaL8ELE"
             },
             {
                 id: 5,
                 title: "How Would You Deal With This Situation?",
-                youtube: "https://youtube.com/shorts/_aNY2bJuXN8"
+                youtube: "https://www.youtube.com/watch?v=_aNY2bJuXN8"
             },
             {
                 id: 6,
                 title: "Motivational Speech for Students",
-                youtube: "https://youtube.com/shorts/8ApPBM0TKM4"
+                youtube: "https://www.youtube.com/watch?v=8ApPBM0TKM4"
             },
             {
                 id: 7,
                 title: "Barack Obama Motivation",
-                youtube: "https://youtube.com/shorts/2vBHh7D804o"
+                youtube: "https://www.youtube.com/watch?v=2vBHh7D804o"
             },
             {
                 id: 8,
                 title: "Power of 1%",
-                youtube: "https://youtube.com/shorts/p0YfmGIr1Gs"
+                youtube: "https://www.youtube.com/watch?v=p0YfmGIr1Gs"
             },
             {
                 id: 9,
                 title: "Nick Vujicic Motivational Speech",
-                youtube: "https://youtube.com/shorts/OUisWAP9yls"
+                youtube: "https://www.youtube.com/watch?v=OUisWAP9yls"
             },
             {
                 id: 10,
                 title: "Get Up and Grind",
-                youtube: "https://youtube.com/shorts/5f7E4DQG6kk"
+                youtube: "https://www.youtube.com/watch?v=5f7E4DQG6kk"
             },
             {
                 id: 11,
                 title: "Work Hard",
-                youtube: "https://youtube.com/shorts/7qMNFZpdxps"
+                youtube: "https://www.youtube.com/watch?v=7qMNFZpdxps"
             },
             {
                 id: 12,
                 title: "How to Think Like a Billionaire",
-                youtube: "https://youtube.com/shorts/CzkLDLflAqk"
+                youtube: "https://www.youtube.com/watch?v=CzkLDLflAqk"
             },
             {
                 id: 13,
                 title: "Smart Mind Hustle",
-                youtube: "https://youtube.com/shorts/_-dc_--ON_Y"
+                youtube: "https://www.youtube.com/watch?v=_-dc_--ON_Y"
             },
             {
                 id: 14,
                 title: "Thomas Jefferson's Insight – Signs of a Fool",
-                youtube: "https://youtube.com/shorts/4leTYCrnUt8"
+                youtube: "https://www.youtube.com/watch?v=4leTYCrnUt8"
             },
             {
                 id: 15,
                 title: "Sushmita Sen Inspirational Speech",
-                youtube: "https://youtube.com/shorts/vbks3PaCJuM"
+                youtube: "https://www.youtube.com/watch?v=vbks3PaCJuM"
             },
             {
                 id: 16,
                 title: "Elon Musk – The Legend",
-                youtube: "https://youtube.com/shorts/9KQJ-WkNoao"
+                youtube: "https://www.youtube.com/watch?v=9KQJ-WkNoao"
             },
             {
                 id: 17,
                 title: "CA's Honest Life Advice to His Son",
-                youtube: "https://youtube.com/shorts/M6vexoUMZZk"
+                youtube: "https://www.youtube.com/watch?v=M6vexoUMZZk"
             },
             {
                 id: 18,
                 title: "Science Knowledge",
-                youtube: "https://youtube.com/shorts/QYy16br3HvE"
+                youtube: "https://www.youtube.com/watch?v=QYy16br3HvE"
             },
             {
                 id: 19,
                 title: "9 Painful Truths of Life",
-                youtube: "https://youtube.com/shorts/B7UBYdQckhQ"
+                youtube: "https://www.youtube.com/watch?v=B7UBYdQckhQ"
             },
             {
                 id: 20,
                 title: "Is There Life After?",
-                youtube: "https://youtube.com/shorts/Wk6eAZJf4rU"
+                youtube: "https://www.youtube.com/watch?v=Wk6eAZJf4rU"
             }
         ]
     }

@@ -9,6 +9,21 @@ const getVideoById = (id) => {
     return content.motivationalVideos.videos.find((v) => v.id.toString() === id);
 };
 
+// ✅ Function to transform URLs for ReactPlayer
+const transformYoutubeUrl = (url) => {
+    if (!url) return '';
+    // Convert Shorts to watch?v= format
+    if (url.includes('/shorts/')) {
+        const id = url.split('/').pop().split('?')[0]; // remove query params
+        return `https://www.youtube.com/watch?v=${id}`;
+    }
+    // Ensure www prefix for other YouTube URLs
+    if (url.includes('youtube.com') && !url.includes('www.youtube.com')) {
+        return url.replace('youtube.com', 'www.youtube.com');
+    }
+    return url;
+};
+
 const VideoPlayer = () => {
     const { id } = useParams();
     const video = getVideoById(id);
@@ -19,16 +34,21 @@ const VideoPlayer = () => {
 
     if (!video) {
         return (
-            <div>
-                {/* Video Not Found UI */}
+            <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+                <Navbar />
+                <h2 className="text-2xl font-semibold mb-4">Video Not Found</h2>
+                <Link
+                    to="/videos"
+                    className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                >
+                    ← Back to Videos
+                </Link>
+                <Footer />
             </div>
         );
     }
 
-    // ✅ Add this here, right after checking video exists
-    const url = video.youtube.includes('shorts')
-        ? video.youtube.replace('youtube.com/shorts', 'youtube.com/watch?v=')
-        : video.youtube;
+    const url = transformYoutubeUrl(video.youtube);
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-50">
@@ -39,7 +59,6 @@ const VideoPlayer = () => {
                     {video.title}
                 </h1>
 
-                {/* ✅ Use the transformed URL here */}
                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg mx-auto">
                     <ReactPlayer
                         url={url}
