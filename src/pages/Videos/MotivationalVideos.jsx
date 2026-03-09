@@ -4,6 +4,21 @@ import Footer from "../../components/Footer/Footer";
 import { content } from "../../data/content";
 import { Link } from "react-router-dom";
 
+// ✅ Function to get YouTube video ID from any URL type
+const getYoutubeId = (url) => {
+    if (!url) return "";
+    if (url.includes("/shorts/")) {
+        return url.split("/").pop().split("?")[0];
+    }
+    if (url.includes("youtu.be/")) {
+        return url.split("/").pop().split("?")[0];
+    }
+    if (url.includes("youtube.com/watch")) {
+        return new URL(url).searchParams.get("v");
+    }
+    return "";
+};
+
 const MotivationalVideos = () => {
     const videos = content.motivationalVideos.videos;
 
@@ -12,13 +27,11 @@ const MotivationalVideos = () => {
             <Navbar pageTitle="Motivational Videos" />
 
             <main className="flex-grow max-w-7xl mx-auto px-6 py-16">
-                <h1 className="text-3xl font-bold mb-10">
-                    Motivational Videos
-                </h1>
+                <h1 className="text-3xl font-bold mb-10">Motivational Videos</h1>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {videos.map((video) => {
-                        const id = video.youtube.split("/").pop().split("?")[0];
+                        const id = getYoutubeId(video.youtube);
                         const thumbnail = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
 
                         return (
@@ -34,9 +47,7 @@ const MotivationalVideos = () => {
                                         className="w-full h-44 object-cover"
                                     />
                                     <div className="p-3">
-                                        <h3 className="text-sm font-semibold">
-                                            {video.title}
-                                        </h3>
+                                        <h3 className="text-sm font-semibold">{video.title}</h3>
                                     </div>
                                 </div>
                             </Link>
