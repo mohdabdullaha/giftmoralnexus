@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import NavGrid from '../../components/NavGrid';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import NavGrid from '../components/NavGrid';
 
-import { content } from '../../data/content';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -18,7 +19,7 @@ const MirrorMoments = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="MIRROR" />
+            <Navbar pageTitle="Mirror Moments" />
 
             <main className="flex-grow">
                 <section className="relative h-[50vh] overflow-hidden">
@@ -27,7 +28,7 @@ const MirrorMoments = () => {
                         <motion.h1
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            className="text-white text-3xl md:text-5xl font-bold text-center tracking-wide uppercase"
+                            className="text-white text-3xl md:text-5xl font-bold text-center tracking-wide"
                         >
                             {data.title}
                         </motion.h1>
@@ -35,17 +36,19 @@ const MirrorMoments = () => {
                 </section>
 
                 <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-                    <div className="max-w-4xl mx-auto text-left">
-                        <h3 className="text-green text-3xl font-bold mb-8 uppercase text-center">Objective: {data.objective}</h3>
+                    <div className="max-w-4xl mx-auto">
+                        <SectionHeading>Mirror <span className="text-green">Moments</span></SectionHeading>
+
+                        <h3 className="text-green text-2xl font-bold mb-8 text-center text-navy tracking-tight underline decoration-gold/50 underline-offset-8 italic">Objective: {data.objective}</h3>
 
                         <div className="bg-ice border border-ice-border p-8 rounded-2xl shadow-sm my-10 text-center">
-                            <p className="text-xl font-medium mb-6 text-navy">{data.text}</p>
+                            <p className="text-3xl font-medium mb-6 text-navy">{data.text}</p>
                             <div className="flex flex-col md:flex-row gap-4 justify-center">
                                 {data.prompts.map((item, idx) => (
                                     <motion.div
                                         key={idx}
                                         whileHover={{ scale: 1.05 }}
-                                        className="bg-white p-6 rounded-2xl shadow-sm border-2 border-dashed border-green/30 flex-1 text-gray-700 italic"
+                                        className="bg-white p-6 rounded-2xl shadow-sm border-2 border-dashed border-green/30 flex-1 text-gray-700 text-xl italic"
                                     >
                                         "{item}"
                                     </motion.div>

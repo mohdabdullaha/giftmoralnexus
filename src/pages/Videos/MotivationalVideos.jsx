@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { content } from "../../data/content";
 import { Link } from "react-router-dom";
+import SectionHeading from "../../components/SectionHeading";
 
-// ✅ Function to get YouTube video ID from any URL type
 const getYoutubeId = (url) => {
     if (!url) return "";
     if (url.includes("/shorts/")) {
@@ -24,10 +24,11 @@ const MotivationalVideos = () => {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Navbar pageTitle="Motivational Videos" />
+            <Navbar pageTitle="Videos" />
 
             <main className="flex-grow max-w-7xl mx-auto px-6 py-16">
-                <h1 className="text-3xl font-bold mb-10">Motivational Videos</h1>
+                <SectionHeading centered={false}>Motivational <span className="text-green">Videos</span></SectionHeading>
+
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {videos.map((video) => {

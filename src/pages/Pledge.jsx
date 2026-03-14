@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import NavGrid from '../../components/NavGrid';
-import { content } from '../../data/content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import NavGrid from '../components/NavGrid';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -17,7 +18,7 @@ const Pledge = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="PLEDGE" />
+            <Navbar pageTitle="Pledge" />
 
             <main className="flex-grow">
                 {/* Hero Section */}
@@ -27,7 +28,7 @@ const Pledge = () => {
                         <motion.h1
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            className="text-white text-3xl md:text-5xl font-bold text-center tracking-wide uppercase"
+                            className="text-white text-3xl md:text-5xl font-bold text-center tracking-wide"
                         >
                             {data.title}
                         </motion.h1>
@@ -36,8 +37,10 @@ const Pledge = () => {
 
                 {/* Content Section */}
                 <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-                    <div className="max-w-4xl mx-auto text-left">
-                        <h3 className="text-green text-3xl font-bold mb-8 uppercase text-center">
+                    <div className="max-w-5xl mx-auto">
+                        <SectionHeading>Our Moral <span className="text-green">Pledge</span></SectionHeading>
+
+                        <h3 className="text-green text-2xl font-bold mb-8 text-center italic">
                             Objective: {data.objective}
                         </h3>
 
@@ -56,7 +59,7 @@ const Pledge = () => {
                                 </div>
                             </div>
 
-                            <p className="mt-10 text-lg font-semibold text-gold/80 relative z-10 uppercase tracking-widest italic">
+                            <p className="mt-10 text-base font-semibold text-gold/80 relative z-10 tracking-widest italic">
                                 {data.footer}
                             </p>
                         </div>

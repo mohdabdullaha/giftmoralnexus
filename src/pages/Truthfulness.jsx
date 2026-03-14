@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import NavGrid from '../../components/NavGrid';
-import { content } from '../../data/content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import NavGrid from '../components/NavGrid';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -17,7 +18,7 @@ const Truthfulness = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="TRUTHFULNESS" />
+            <Navbar pageTitle="Cardinal Virtue" />
 
             <main className="flex-grow">
                 {/* Hero */}
@@ -34,25 +35,25 @@ const Truthfulness = () => {
                     </div>
                 </section>
 
-                {/* Content */}
                 <section className="max-w-7xl mx-auto px-6 py-16">
                     <div className="max-w-4xl mx-auto text-left space-y-8">
+                        <SectionHeading centered={false}>The Significance of <span className="text-green">Truthfulness</span></SectionHeading>
                         <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            className="text-lg text-gray-700"
+                            className="text-xl text-gray-700"
                         >
                             {data.intro}
                         </motion.p>
 
-                        <AudioPlayer urduSrc={data.audios.urdu} englishSrc={data.audios.english} />
+
 
                         <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            className="text-lg text-gray-700"
+                            className="text-xl text-gray-700"
                         >
                             {data.body}
                         </motion.p>
@@ -65,7 +66,7 @@ const Truthfulness = () => {
                                 className="bg-ice border border-ice-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
                             >
                                 <h3 className="text-green text-2xl font-bold mb-4">{data.benefits.title}</h3>
-                                <p className="text-gray-700 leading-relaxed">{data.benefits.text}</p>
+                                <p className="text-gray-700 text-xl leading-relaxed">{data.benefits.text}</p>
                             </motion.div>
 
                             <motion.div
@@ -75,9 +76,10 @@ const Truthfulness = () => {
                                 className="bg-ice border border-ice-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
                             >
                                 <h3 className="text-navy text-2xl font-bold mb-4">{data.consequences.title}</h3>
-                                <p className="text-gray-700 leading-relaxed">{data.consequences.text}</p>
+                                <p className="text-gray-700 text-xl leading-relaxed">{data.consequences.text}</p>
                             </motion.div>
                         </div>
+                        <AudioPlayer urduSrc={data.audios.urdu} englishSrc={data.audios.english} />
                     </div>
 
                     <NavGrid excludeId="truthfulness" />

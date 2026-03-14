@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { content } from '../../data/content';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import SectionHeading from '../../components/SectionHeading';
 
 const getVideoById = (id) => {
     return content.motivationalVideos.videos.find((v) => v.id.toString() === id);
@@ -75,17 +76,14 @@ const VideoPlayer = () => {
             </div>
         );
     }
-    console.debug('[VideoPlayer] video.youtube=', video.youtube, 'videoId=', videoId);
-    console.debug('[VideoPlayer] playerUrl=', playerUrl, 'embedUrl=', embedUrl, 'useIframeFallback=', useIframeFallback);
-
     return (
-        <div className="min-h-screen flex flex-col bg-gray-50">
-            <Navbar pageTitle="VIDEOS" />
+        <div className="min-h-screen flex flex-col bg-white">
+            <Navbar pageTitle="Videos" />
 
-            <main className="flex-grow flex flex-col items-center justify-center max-w-5xl mx-auto px-6 py-12 w-full">
-                <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-                    {video.title}
-                </h1>
+
+            <main className="flex-grow flex flex-col items-center justify-center max-w-5xl mx-auto px-6 py-12 w-full text-center">
+                <SectionHeading>{video.title}</SectionHeading>
+
 
                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg mx-auto">
                     {videoId ? (
@@ -111,7 +109,7 @@ const VideoPlayer = () => {
                 <div className="mt-8 text-center">
                     <Link
                         to="/videos"
-                        className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                        className="inline-block px-8 py-3 bg-navy text-white rounded-xl hover:bg-navy-dark transition-all shadow-lg shadow-navy/20 font-bold tracking-widest"
                     >
                         ← Back to Videos
                     </Link>

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
 @import "tailwindcss";
+
 
 @config "../tailwind.config.js";
 
@@ -13,8 +15,30 @@
   .reveal {
     @apply opacity-0 translate-y-10 transition-all duration-700 ease-out;
   }
+
   .reveal.active {
     @apply opacity-100 translate-y-0;
+  }
+
+  .animate-slide-in-top {
+    animation: slide-in-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .font-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2.2;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

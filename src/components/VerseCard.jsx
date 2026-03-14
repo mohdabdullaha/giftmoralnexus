@@ -10,9 +10,9 @@ const VerseCard = ({ verse }) => {
                 </p>
             </div>
             <div className="text-left space-y-4">
-                <p className="text-lg italic text-gray-700">"{verse.translation}"</p>
+                <p className="text-2xl italic text-gray-700">"{verse.translation}"</p>
                 <p className="text-sm text-navy/70 uppercase font-bold tracking-wider">Reflection:</p>
-                <p className="text-gray-600 border-l-4 border-gold pl-4">{verse.reflection}</p>
+                <p className="text-gray-600 text-xl border-l-4 border-gold pl-4">{verse.reflection}</p>
 
                 <div className="mt-8 flex justify-center">
                     <audio controls src={verse.audio} className="w-full max-w-md h-10" />

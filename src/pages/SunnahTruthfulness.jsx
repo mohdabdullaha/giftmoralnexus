@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import NavGrid from '../../components/NavGrid';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import NavGrid from '../components/NavGrid';
 
-import { content } from '../../data/content';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -18,7 +19,7 @@ const SunnahTruthfulness = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="SUNNAH" />
+            <Navbar pageTitle="Sunnah" />
 
             <main className="flex-grow">
                 <section className="relative h-[50vh] overflow-hidden">
@@ -35,7 +36,8 @@ const SunnahTruthfulness = () => {
                 </section>
 
                 <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-                    <div className="max-w-4xl mx-auto">
+                    <div className="max-w-5xl mx-auto">
+                        <SectionHeading>Prophetic Guidance on <span className="text-green">Truthfulness</span></SectionHeading>
 
                         <div className="space-y-8 my-10">
                             {data.insights.map((item, idx) => (
@@ -46,7 +48,7 @@ const SunnahTruthfulness = () => {
                                 >
                                     <div className="absolute top-0 left-0 w-2 h-full bg-green group-hover:w-3 transition-all" />
                                     <h4 className="text-navy font-bold text-xl mb-3">{item.title}</h4>
-                                    <p className="text-gray-700 text-lg italic mb-4">"{item.text}"</p>
+                                    <p className="text-gray-700 text-2xl italic mb-4">"{item.text}"</p>
                                     <p className="text-right text-navy/60 font-medium">{item.ref}</p>
                                 </motion.div>
                             ))}

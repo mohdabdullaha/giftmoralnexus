@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import NavGrid from '../../components/NavGrid';
-import { content } from '../../data/content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import NavGrid from '../components/NavGrid';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg'; // same as Sunnah page
 
@@ -17,7 +18,7 @@ const RazEHayat = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="RAZ-E-HAYAT" />
+            <Navbar pageTitle="Raz-e-Hayat" />
 
             {/* HERO SECTION */}
             <section className="relative h-[50vh] overflow-hidden">
@@ -38,29 +39,28 @@ const RazEHayat = () => {
                 <div className="max-w-4xl mx-auto text-right space-y-6">
 
                     {/* Heading */}
-                    <h2 className="text-3xl font-bold text-navy mb-4">
-                        چوٹی کے لوگ
-                    </h2>
+                    <div className="flex justify-end mb-8">
+                        <SectionHeading centered={false}>چوٹی کے لوگ</SectionHeading>
+                    </div>
 
-                    {/* Paragraphs */}
-                    {data.paragraphs?.map((para, idx) => (
-                        <p key={idx} className="text-lg text-gray-700 leading-relaxed">
-                            {para}
-                        </p>
-                    ))}
+                    <div className="font-urdu">
+                        {data.paragraphs?.map((para, idx) => (
+                            <p key={idx} className="text-2xl text-gray-700 leading-relaxed font-urdu mb-8">
+                                {para}
+                            </p>
+                        ))}
+                    </div>
 
                     {/* Quote */}
                     {data.quote && (
                         <div className="bg-gold/10 border-l-4 border-gold p-6 rounded-xl my-10">
-                            <p className="italic text-lg text-gray-800 text-center">{data.quote}</p>
+                            <p className="italic text-2xl text-gray-800 text-center">{data.quote}</p>
                         </div>
                     )}
 
                     {/* AUDIO PLAYER */}
                     {data.audios?.urdu && (
-                        <div className="text-center my-12">
-                            <AudioPlayer urduSrc={data.audios.urdu} buttonLabel="Listen" />
-                        </div>
+                        <AudioPlayer urduSrc={data.audios.urdu} />
                     )}
 
                 </div>

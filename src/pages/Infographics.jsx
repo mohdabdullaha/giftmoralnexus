@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import { content } from '../../data/content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { content } from '../data/content';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
 import { FileText, Download } from 'lucide-react';
 
 const Infographics = () => {
@@ -14,7 +15,7 @@ const Infographics = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="INFOGRAPHICS" />
+            <Navbar pageTitle="Infographics" />
 
             <main className="flex-grow py-14 px-6">
                 <div className="max-w-5xl mx-auto">
@@ -22,14 +23,11 @@ const Infographics = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="text-center mb-12"
+                        className="mb-12"
                     >
-                        <h1 className="text-2xl md:text-4xl font-bold text-navy mb-3 inline-block relative">
-                            MORAL <span className="text-green">INFOGRAPHICS</span>
-                            <div className="absolute -bottom-3 left-0 w-full h-1 bg-gold rounded-full opacity-70" />
-                        </h1>
+                        <SectionHeading>MORAL <span className="text-green">INFOGRAPHICS</span></SectionHeading>
 
-                        <p className="text-base text-gray-700 mt-6 italic font-medium max-w-xl mx-auto">
+                        <p className="text-2xl text-gray-700 mt-6 italic font-medium max-w-xl mx-auto">
                             "{data.subtitle}"
                         </p>
                     </motion.div>
@@ -49,11 +47,11 @@ const Infographics = () => {
                                     <FileText className="text-navy group-hover:text-white transition-colors" size={24} />
                                 </div>
 
-                                <h3 className="text-lg font-bold text-navy mb-2 uppercase tracking-tight">
+                                <h3 className="text-2xl font-bold text-navy mb-2 tracking-tight">
                                     {pdf.title}
                                 </h3>
 
-                                <p className="text-sm text-gray-500 italic mb-8 flex-grow">
+                                <p className="text-xl text-gray-500 italic mb-8 flex-grow">
                                     {pdf.desc}
                                 </p>
 

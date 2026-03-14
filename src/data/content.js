@@ -1,6 +1,6 @@
 export const content = {
     metadata: {
-        siteTitle: "GIFT MORAL NEXUS",
+        siteTitle: "GIFT Moral Nexus",
         siteHandle: "@GIFTUNIV",
         contact: {
             location: "GF-04, Society of Islamic Thought & Culture (SITC), GIFT University",
@@ -20,30 +20,30 @@ export const content = {
         }
     },
     home: {
-        title: "TRUTHFULNESS – ETHICAL GROWTH TOGETHER",
-        welcome: "Welcome to Gift Moral Nexus. Explore the Truthfulness module with readings, activities, pledges, and audio in Urdu and English. Use the cards below to dive into each experience.",
+        title: "GIFT Moral Nexus",
+        welcome: "Welcome to GIFT Moral Nexus. Explore the Truthfulness module with readings, activities, pledges, and audio in Urdu and English. Use the cards below to dive into each experience.",
         cards: [
-            { id: 'truthfulness', title: 'TRUTHFULNESS', desc: 'Core concept, benefits, consequences', path: '/truthfulness' },
-            { id: 'quran', title: "QUR'AN ON TRUTHFULNESS", desc: 'Verses & reflections', path: '/quran' },
-            { id: 'sunnah', title: 'SUNNAH ON TRUTHFULNESS', desc: 'Prophetic guidance', path: '/sunnah' },
-            { id: 'questions', title: 'REFLECTIVE QUESTIONS', desc: 'Think deeply', path: '/questions' },
-            { id: 'dilemmas', title: 'TRUTHFULNESS DILEMMAS', desc: 'Scenario practice', path: '/dilemmas' },
-            { id: 'mirror', title: 'MIRROR MOMENTS', desc: 'Personal reflection', path: '/mirror-moments' },
-            { id: 'roleplay', title: 'ROLE PLAY', desc: 'Interactive learning', path: '/roleplay' },
-            { id: 'pledge', title: 'TRUTHFULNESS PLEDGE', desc: 'Commitment & reflection', path: '/pledge' },
-            { id: 'razehayat', title: 'RAZ-E-HAYAT', desc: 'The secret to a fulfilling life based on timeless principles.', path: '/razehayat' },
+            { id: 'truthfulness', title: 'Truthfulness', desc: 'Core concept, benefits, consequences', path: '/truthfulness' },
+            { id: 'quran', title: "Qur'an on Truthfulness", desc: 'Verses & reflections', path: '/quran' },
+            { id: 'sunnah', title: 'Sunnah on Truthfulness', desc: 'Prophetic guidance', path: '/sunnah' },
+            { id: 'questions', title: 'Reflective Questions', desc: 'Think deeply', path: '/questions' },
+            { id: 'dilemmas', title: 'Truthfulness Dilemmas', desc: 'Scenario practice', path: '/dilemmas' },
+            { id: 'mirror', title: 'Mirror Moments', desc: 'Personal reflection', path: '/mirror-moments' },
+            { id: 'roleplay', title: 'Role Play', desc: 'Interactive learning', path: '/roleplay' },
+            { id: 'pledge', title: 'Truthfulness Pledge', desc: 'Commitment & reflection', path: '/pledge' },
+            { id: 'razehayat', title: 'Raz-e-Hayat', desc: 'The secret to a fulfilling life based on timeless principles.', path: '/razehayat' },
         ]
     },
     truthfulness: {
-        title: "TRUTHFULNESS – THE GREATEST VIRTUE",
+        title: "Truthfulness",
         intro: "Truthfulness is one of the greatest virtues that defines a person’s character. It means being honest in our words, actions, and thoughts. A truthful person speaks the truth, stands by it even when it is difficult, and avoids deceit in all forms. Truthfulness builds trust, strengthens relationships, and forms the foundation of a good and peaceful society.",
         body: "Truthfulness is not just about speaking the truth; it is about living truthfully. It involves sincerity, fairness, and integrity in every aspect of life. A truthful person does not hide facts, cheat, or mislead others. In personal life, truthfulness brings inner peace and self-respect. In social life, it earns respect, confidence, and love from others. A truthful society is one where justice and harmony prevail.",
         benefits: {
-            title: "BENEFITS OF BEING TRUTHFUL",
+            title: "Benefits of being Truthful",
             text: "Truthfulness leads to trust and credibility. When people know that we speak the truth, they are more likely to believe and depend on us. It saves us from fear and guilt because a truthful person has nothing to hide. Truth is the foundation of wisdom, and in the long run, truth always triumphs over falsehood. — as the saying goes, “Truth alone triumphs”.",
         },
         consequences: {
-            title: "CONSEQUENCES OF DISHONESTY",
+            title: "Consequences of Dishonesty",
             text: "Falsehood may give temporary benefits, but it ultimately leads to loss of trust, guilt, and shame. A liar is always afraid of being caught, and once trust is broken, it is very difficult to regain. Lies create confusion and harm relationships and reputations.",
         },
         audios: {
@@ -52,14 +52,13 @@ export const content = {
         }
     },
     quran: {
-        title: "QUR'AN ON TRUTHFULNESS",
+        title: "Quran on Truthfulness",
         intro: "Truthfulness is one of the greatest virtues that defines a person’s character. It means being honest in our words, actions, and thoughts. A truthful person speaks the truth, stands by it even when it is difficult, and avoids deceit in all forms. Truthfulness builds trust, strengthens relationships, and forms the foundation of a good and peaceful society.",
-        banner: "READ ON BELOW OR LISTEN HERE INSTEAD 🔊",
         verses: [
             {
                 id: "5:119",
                 surah: "Surah Al-Ma'idah (5:119)",
-                arabic: "هَٰذَا يَوْمُ يَنفَعُ الصَّادِقِينَ صِدْقُهُمْ ۚ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۚ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+                arabic: "قَالَ اللَّهُ هَٰذَا يَوْمُ يَنفَعُ الصَّادِقِينَ صِدْقُهُمْ ۚ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۚ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
                 translation: "This is the Day when the truthful will benefit from their truthfulness. For them are gardens beneath which rivers flow, wherein they will abide forever. Allah is pleased with them, and they are pleased with Him. That is the great attainment.",
                 reflection: "The eternal reward of those who live truthfully — integrity in this life becomes their salvation in the next.",
                 audio: "/assets/audios/Quran_on_Truthfulness/Surah Al-Ma'idah (5119).aac"
@@ -67,7 +66,7 @@ export const content = {
             {
                 id: "33:70-71",
                 surah: "Surah Al-Ahzab (33:70–71)",
-                arabic: "يُصْلِحْ لَكُمْ أَعْمَالَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ ۗ وَمَن يُطِعِ اللَّهَ وَرَسُولَهُ فَقَدْ فَازَ فَوْزًا عَظِيمًا",
+                arabic: "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلًا سَدِيدًا يُصْلِحْ لَكُمْ أَعْمَالَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ ۗ وَمَن يُطِعِ اللَّهَ وَرَسُولَهُ فَقَدْ فَازَ فَوْزًا عَظِيمًا",
                 translation: "O you who have believed, fear Allah and speak words of appropriate justice. He will then amend for you your deeds and forgive you your sins. And whoever obeys Allah and His Messenger has attained a great attainment.",
                 reflection: "Always speak truthfully and justly; truthful speech links to divine forgiveness and success.",
                 audio: "/assets/audios/Quran_on_Truthfulness/Surah Al-Ahzab (3370–71).aac"
@@ -79,7 +78,7 @@ export const content = {
         }
     },
     sunnah: {
-        title: "SUNNAH ON TRUTHFULNESS",
+        title: "Sunnah on Truthfulness",
         insights: [
             {
                 title: "Truthfulness in Trade",
@@ -98,7 +97,7 @@ export const content = {
         }
     },
     questions: {
-        title: "REFLECTIVE QUESTIONS",
+        title: "Reflective Questions",
         list: [
             "When have you faced a situation where being truthful came at a personal cost? What did you learn from that experience?",
             "How do academic pressures influence your commitment to truthfulness in exams, assignments, or group work?",
@@ -112,7 +111,7 @@ export const content = {
         }
     },
     dilemmas: {
-        title: "TRUTHFULNESS DILEMMA SCENARIOS",
+        title: "Truthfulness Dilemma Scenarios",
         objective: "Encourage Ethical Decision-Making",
         scenarios: [
             "Present students with short real-life dilemmas (e.g., finding a lost wallet, copying a friend’s assignment, or giving truthful feedback).",
@@ -125,7 +124,7 @@ export const content = {
         }
     },
     mirror: {
-        title: "MIRROR MOMENTS",
+        title: "Mirror Moments",
         objective: "Deepen Self-Awareness",
         text: "Ask students to write for 10 minutes on:",
         prompts: [
@@ -139,7 +138,7 @@ export const content = {
         }
     },
     roleplay: {
-        title: "TRUTHFULNESS ROLE PLAY",
+        title: "Truthfulness Role Play",
         objective: "Bridge the Gap Between Theory and Practice",
         scenarios: [
             "Divide the class into small groups.",
@@ -153,7 +152,7 @@ export const content = {
         }
     },
     pledge: {
-        title: "TRUTHFULNESS PLEDGE AND GROUP REFLECTION",
+        title: "Truthfulness Pledge and Group Reflection",
         objective: "Solidify Commitment to Truthfulness",
         text: "As a group, recite or sign a personal pledge:",
         pledge: "“I commit to being truthful in my words and actions, even when it is difficult, to build a life of integrity and trust.”",
@@ -164,48 +163,48 @@ export const content = {
         }
     },
     about: {
-        title: "ABOUT US",
+        title: "About Us",
         content: [
             "Gift Moral Nexus is dedicated to fostering ethical growth and moral integrity within the university community and beyond.",
             "Our platform provides a unique blend of traditional wisdom and modern reflective practices to help students navigate complex moral landscapes. We believe that moral excellence is a journey of continuous growth and self-discovery."
         ],
-        footer: "GIFT UNIVERSITY - SOCIETY OF ISLAMIC THOUGHT & CULTURE"
+        footer: "GIFT University - Society of Islamic Thought & Culture"
     },
     contact: {
-        title: "GET IN TOUCH",
+        title: "Get in Touch",
         subtitle: "Have questions or want to collaborate with the Society of Islamic Thought and Culture? We'd love to hear from you.",
         details: [
-            { label: "EMAIL OFFICIAL", value: "sitc@gift.edu.pk", icon: "email" },
-            { label: "PHONE LINE", value: "+92 (55) 111 900 100", icon: "phone" },
-            { label: "CAMPUS LOCATION", value: "GF-04, SITC, GIFT University", icon: "location" }
+            { label: "Email Official", value: "sitc@gift.edu.pk", icon: "email" },
+            { label: "Phone Line", value: "+92 (55) 111 900 100", icon: "phone" },
+            { label: "Campus Location", value: "GF-04, SITC, GIFT University", icon: "location" }
         ],
         form: {
-            title: "INQUIRY FORM",
+            title: "Inquiry Form",
             subtitle: "We typically respond within 24 university hours.",
-            fields: ["FULL NAME", "EMAIL ADDRESS", "MESSAGE DESCRIPTION"]
+            fields: ["Full Name", "Email Address", "Message Description"]
         }
     },
     infographics: {
-        title: "MORAL INFOGRAPHICS",
+        title: "Moral Infographics",
         subtitle: "Visualizing the impact of character development and ethical integrity.",
         pdfs: [
-            { title: "SUCCESS HABITS", desc: "What the most successful people do before the break.", file: "/assets/pdf/What the most successful people Do before the break .pdf" },
-            { title: "MORNING DISCIPLINE", desc: "Make your bed - Small habits for major life changes.", file: "/assets/pdf/Make your bed.pdf" }
+            { title: "Success Habits", desc: "What the most successful people do before the break.", file: "/assets/pdf/What the most successful people Do before the break .pdf" },
+            { title: "Morning Discipline", desc: "Make your bed - Small habits for major life changes.", file: "/assets/pdf/Make your bed.pdf" }
         ]
     },
     purpose: {
-        title: "OUR PURPOSE",
+        title: "Our Purpose",
         vision: {
-            title: "OUR VISION",
+            title: "Our Vision",
             text: "To be a leading center for moral and ethical development, inspiring individuals to live with integrity, truthfulness, and compassion in all aspects of life."
         },
         mission: {
-            title: "OUR MISSION",
+            title: "Our Mission",
             text: "To provide accessible resources, reflective activities, and community engagement opportunities that promote the practice of universal moral values, particularly truthfulness, as guided by Prophetic teachings."
         }
     },
     razehayat: {
-        title: "RAZ-E-HAYAT",
+        title: "Raz-e-Hayat",
         subtitle: "چوٹی کے لوگ",
 
         paragraphs: [
@@ -226,7 +225,7 @@ export const content = {
         }
     },
     motivationalVideos: {
-        title: "MOTIVATIONAL VIDEOS",
+        title: "Motivational Videos",
         subtitle: "Inspirational videos that encourage reflection, resilience, and ethical growth.",
         videos: [
             {

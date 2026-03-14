@@ -10,7 +10,7 @@ const NavGrid = ({ excludeId }) => {
 
     return (
         <div className="mt-14">
-            <h3 className="text-green text-3xl font-bold mb-8 uppercase tracking-wide">Explore More</h3>
+            <h3 className="text-green text-3xl font-bold mb-8 tracking-wide">Explore More</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
                 {cards.map((card, index) => (
                     <motion.div
@@ -33,8 +33,8 @@ const NavGrid = ({ excludeId }) => {
                                 <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors" />
                             </div>
                             <div className="p-5 text-center">
-                                <h4 className="text-navy font-bold mb-2 group-hover:text-green transition-colors">{card.title}</h4>
-                                <p className="text-sm text-gray-600 line-clamp-2">{card.desc}</p>
+                                <h4 className="text-xl font-bold mb-2 group-hover:text-green transition-colors">{card.title}</h4>
+                                <p className="text-base text-gray-600 line-clamp-2">{card.desc}</p>
                             </div>
                         </NavLink>
                     </motion.div>

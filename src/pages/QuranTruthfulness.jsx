@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import AudioPlayer from '../../components/AudioPlayer/AudioPlayer';
-import VerseCard from '../../components/VerseCard/VerseCard';
-import NavGrid from '../../components/NavGrid';
-import { content } from '../../data/content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
+import VerseCard from '../components/VerseCard';
+import NavGrid from '../components/NavGrid';
 import { motion } from 'framer-motion';
+import SectionHeading from '../components/SectionHeading';
+import { content } from '../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -18,7 +19,7 @@ const QuranTruthfulness = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="QUR'AN" />
+            <Navbar pageTitle="Quran" />
 
             <main className="flex-grow">
                 <section className="relative h-[50vh] overflow-hidden">
@@ -37,8 +38,10 @@ const QuranTruthfulness = () => {
                 <section className="max-w-7xl mx-auto px-6 py-16 text-center">
                     <div className="max-w-4xl mx-auto space-y-12">
 
+                        <SectionHeading>The Divine Wisdom on <span className="text-green">Truthfulness</span></SectionHeading>
+
                         <div className="my-10">
-                            <h3 className="text-green text-3xl font-bold mb-8 uppercase">Key Verses</h3>
+                            <h3 className="text-green text-3xl font-bold mb-8">Key Verses</h3>
                             {data.verses.map(verse => (
                                 <VerseCard key={verse.id} verse={verse} />
                             ))}
