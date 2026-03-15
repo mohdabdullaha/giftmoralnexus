@@ -5,12 +5,24 @@ import { content } from '../data/content';
 
 const defaultImg = '/img.jpg';
 
-const NavGrid = ({ excludeId }) => {
-    const cards = content.home.cards.filter(card => card.id !== excludeId);
+const NavGrid = ({ excludeId, section }) => {
+    let cards;
+
+    if (section === 'cardinalVirtues') {
+        cards = content.cardinalVirtuesCards;
+    } else if (section === 'razEHayat') {
+        cards = content.razEHayatCards;
+    } else if (section === 'etp') {
+        cards = content.etpCards;
+    } else {
+        cards = content.home.cards;
+    }
+
+    cards = cards.filter(card => card.id !== excludeId);
 
     return (
         <div className="mt-14">
-            <h3 className="text-green text-3xl font-bold mb-8 tracking-wide">Explore More</h3>
+            <h3 className="text-green text-3xl font-bold mb-8 tracking-wide text-center">Explore More</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
                 {cards.map((card, index) => (
                     <motion.div

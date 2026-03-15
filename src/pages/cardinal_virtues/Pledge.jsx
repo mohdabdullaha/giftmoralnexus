@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import AudioPlayer from '../components/AudioPlayer';
-import NavGrid from '../components/NavGrid';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import AudioPlayer from '../../components/AudioPlayer';
+import NavGrid from '../../components/NavGrid';
 import { motion } from 'framer-motion';
-import SectionHeading from '../components/SectionHeading';
-import { content } from '../data/content';
+import SectionHeading from '../../components/SectionHeading';
+import { content } from '../../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -70,7 +70,7 @@ const Pledge = () => {
                         />
                     </div>
 
-                    <NavGrid excludeId="pledge" />
+                    <NavGrid excludeId="pledge" section="cardinalVirtues" />
                 </section>
             </main>
 

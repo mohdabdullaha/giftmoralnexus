@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import AudioPlayer from '../components/AudioPlayer';
-import NavGrid from '../components/NavGrid';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import AudioPlayer from '../../components/AudioPlayer';
+import NavGrid from '../../components/NavGrid';
 import { motion } from 'framer-motion';
-import SectionHeading from '../components/SectionHeading';
-import { content } from '../data/content';
+import SectionHeading from '../../components/SectionHeading';
+import { content } from '../../data/content';
 
 const heroImg = '/img.jpg';
 
@@ -18,7 +18,7 @@ const Truthfulness = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-white">
-            <Navbar pageTitle="Cardinal Virtue" />
+            <Navbar pageTitle="Cardinal Virtues" />
 
             <main className="flex-grow">
                 {/* Hero */}
@@ -82,7 +82,7 @@ const Truthfulness = () => {
                         <AudioPlayer urduSrc={data.audios.urdu} englishSrc={data.audios.english} />
                     </div>
 
-                    <NavGrid excludeId="truthfulness" />
+                    <NavGrid excludeId="truthfulness" section="cardinalVirtues" />
                 </section>
             </main>
 

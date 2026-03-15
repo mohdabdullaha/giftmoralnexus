@@ -25,7 +25,7 @@ const Infographics = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         className="mb-12"
                     >
-                        <SectionHeading>MORAL <span className="text-green">INFOGRAPHICS</span></SectionHeading>
+                        <SectionHeading>50 BEST SELLER BOOKS <span className="text-green">INFOGRAPHICS</span></SectionHeading>
 
                         <p className="text-2xl text-gray-700 mt-6 italic font-medium max-w-xl mx-auto">
                             "{data.subtitle}"
